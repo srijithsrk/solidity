@@ -1,0 +1,11 @@
+pragma solidity ^0.4.0;       //pragma gives instructions
+
+contract Storage
+{
+uint x;  //unsigned integer
+
+function store(uint data)
+{
+x = data;     //data is stored
+}
+function 
