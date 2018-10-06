@@ -4,8 +4,12 @@ contract Storage
 {
 uint x;  //unsigned integer
 
-function store(uint data)
+function store(uint data) public 
 {
 x = data;     //data is stored
 }
-function 
+function get() public view returns(uint)      //view can be replaced as constant
+{
+return x;     //data is retreived
+}
+}
