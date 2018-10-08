@@ -26,4 +26,8 @@ function getBalanceOfInstance() public returns (uint)
 {
 return address(_instance).balance;
 }
+function () public payable
+{
+address(_instance).transfer(msg.value);
+}
 }
